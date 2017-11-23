@@ -1,0 +1,18 @@
+{
+  "name": "pritak",
+  "version": "1.0.0",
+  "description": "Pritak Patel's personal website, which includes links to recent projects, work history, and interests.",
+  "main": "index.html",
+  "dependencies": {
+    "bulma": "^0.6.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "tippy.js": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pritak Patel",
+  "license": "ISC"
+}
