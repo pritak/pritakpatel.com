@@ -4,6 +4,10 @@
   "homepage": "https://pritak.github.io/index.html",
   "description": "Pritak Patel's personal website, which includes links to recent projects, work history, and interests.",
   "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pritak/pritak.github.io.git"
+  },
   "dependencies": {
     "bulma": "^0.6.1",
     "font-awesome": "^4.7.0",
