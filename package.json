@@ -1,6 +1,7 @@
 {
   "name": "pritak",
   "version": "1.0.0",
+  "homepage": "https://pritak.github.io/index.html",
   "description": "Pritak Patel's personal website, which includes links to recent projects, work history, and interests.",
   "main": "index.html",
   "dependencies": {
