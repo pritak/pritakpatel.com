@@ -32,7 +32,8 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
-# Compiled gulp build
+# Gulp files
+gulpfile.js
 dist/
 
 # Dependency directories
