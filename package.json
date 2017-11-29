@@ -16,11 +16,17 @@
   },
   "devDependencies": {
     "git-scripts": "^0.2.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlclean": "^2.7.15",
+    "gulp-inject": "^4.3.0",
+    "gulp-uglify": "^3.0.0",
     "surge": "^0.19.0"
   },
   "git": {
     "scripts": {
-      "pre-push": "surge --project ./ --domain pritak.surge.sh"
+      "pre-push": "surge --project ./dist --domain pritak.surge.sh"
     }
   },
   "scripts": {
