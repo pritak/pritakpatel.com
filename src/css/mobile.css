@@ -1,0 +1,189 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+#navigation{
+  margin-bottom:5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#main-title{
+  font-weight: 800;
+  color: transparent;
+  font-size:100px;
+  background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  position:relative;
+  text-align:center;
+  line-height:115px;
+  letter-spacing: -4px;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+}
+
+#main-title:hover{
+  /* transform: scale(1.1, 1.1); */
+  cursor: pointer;
+}
+
+#main-subtitle{
+  display: block;
+  text-align: center;
+  padding-top:10px;
+}
+
+#left-column{
+  z-index: 1000;
+}
+
+#right-column{
+  z-index: 900;
+  display: inline-block;
+}
+
+#introduction{
+  background: rgb(255, 255, 255);
+  max-width: 100%;
+}
+
+#projects{
+  background: rgb(255, 248, 188);
+  max-width: 100%;
+}
+
+.box:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+#experience{
+  background: rgb(255, 255, 255);
+  max-width: 100%;
+}
+
+#education{
+  position: relative;
+  background: rgba(0, 81, 255, 0.185);
+  max-width: 100%;
+}
+
+#interests{
+  background: rgba(172, 248, 32, 0.185);
+  max-width: 100%;
+}
+
+#footer{
+  background: rgba(145, 196, 79, 0.473);
+  max-width: 100%;
+  font-size: 80%;
+  z-index: 1001;
+}
+
+#text-container{
+  padding-top: 10%;
+  padding-bottom: 11%;
+  padding-right: 7%;
+  padding-left: 7%;
+  max-width: 100%;
+}
+
+#footer-container{
+  overflow: hidden;
+  font-size: 90%;
+  line-height: 120%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 7%;
+  padding-left: 7%;
+  margin-bottom: -100%;
+  max-width: 100%;
+}
+
+#footer-icons{
+  font-size: 135%;
+  float:right;
+  padding-top: 0.9%;
+  letter-spacing: 2px;
+}
+
+#project-grid{
+  margin: 0%;
+  padding-top: 1%;
+}
+
+#github-icon{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+#project-box{
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  position: relative;
+}
+
+#project-box:hover{
+  transform: scale(1.05, 1.05);
+}
+
+#dates{
+  text-align: right;
+}
+
+.animated-body{
+  visibility: visible;
+}
+
+.body-images{
+}
+
+figcaption {
+  position: absolute;
+  justify-content: right;
+  background: black;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 10px 20px;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+}
+
+figure:before {
+  content: "?";
+  position: absolute;
+  font-weight: 800;
+  background: black;
+  background: rgba(255,255,255,0.75);
+  text-shadow: 0 0 5px white;
+  color: black;
+  width: 24px;
+  height: 24px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius:    12px;
+  border-radius:         12px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  -moz-transition: all 0.6s ease;
+  opacity: 0.75;
+}
+
+figure:hover:before {
+  opacity: 0;
+}
+
+.cap-right:before { bottom: 10px; right: 10px; }
+.cap-right figcaption { bottom: 0; right: -30%; }
+.cap-right:hover figcaption { right: 0; }

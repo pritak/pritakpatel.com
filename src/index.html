@@ -16,7 +16,8 @@
 
   <title>Pritak Patel</title>
   <!--<Deject>-->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 100px) and (max-device-width: 750px)" href="css/mobile.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 750px) and (max-device-width: 2000px)" href="css/desktop.css" />
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="/node_modules/bulma/css/bulma.css">
   <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.css">
@@ -29,8 +30,8 @@
 </head>
 
 <body>
-  <div class="columns is-gapless">
-    <div class="column is-half"></div>
+  <div class="columns is-gapless is-desktop">
+
     <div id="left-column" class="column is-half">
       <section class="hero is-fullheight is-bold is-primary">
         <div class="hero-body">
@@ -69,6 +70,7 @@
         </div>
       </section>
     </div>
+    <div class="column is-half is-desktop"></div>
     <div id="right-column" class="column is-half">
 
       <div id="introduction" class="container">

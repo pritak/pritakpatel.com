@@ -42,6 +42,11 @@ html, body {
   position: fixed;
 }
 
+#right-column{
+  z-index: 900;
+  display: inline-block;
+}
+
 #introduction{
   background: rgb(255, 255, 255);
   max-width: 100%;
