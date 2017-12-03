@@ -14,27 +14,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
-  
   <title>Pritak Patel</title>
   <!--<Deject>-->
-  <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 100px) and (max-device-width: 750px)" href="css/mobile.css" />
-  <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 750px) and (max-device-width: 2000px)" href="css/desktop.css" />
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="/node_modules/bulma/css/bulma.css">
   <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.css">
   <script src="/node_modules/tippy.js/dist/tippy.all.min.js"></script>
   <script src="/node_modules/jquery/dist/jquery.js"></script>
-  <script src="js/nav-scroll.js"></script>
   <script src="js/title-design.js"></script>
   <script src="js/animations.js"></script>
+  <script src="js/resize.js"></script>
   <!--</Deject>-->
 </head>
 
 <body>
-  <div class="columns is-gapless is-desktop">
+  <div class="columns is-gapless">
 
     <div id="left-column" class="column is-half">
-      <section class="hero is-fullheight is-bold is-primary">
+      <section id="title-hero" class="hero is-fullheight is-bold is-primary">
         <div class="hero-body">
           <div class="container">
             <h1 id="main-title" class="title animated bounceIn" title="Click Me!">
@@ -46,35 +44,17 @@
             </div>
           </div>
         </div>
-        <div id="navigation" class="hero-foot">
-          <nav class="tabs is-fullwidth is-size-6">
-            <div class="container">
-              <ul>
-                <li>
-                  <a href="#introduction">Introduction</a>
-                </li>
-                <li>
-                  <a href="#projects">Projects</a>
-                </li>
-                <li>
-                  <a href="#experience">Experience</a>
-                </li>
-                <li>
-                  <a href="#duke-chapel">Education</a>
-                </li>
-                <li>
-                  <a href="#interests">Interests</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
+        <nav id="navigation" class="is-fullwidth is-size-5">
+          <i class="fa fa-github fa-lg"></i>
+          <i class="fa fa-linkedin fa-lg"></i>
+          <i class="fa fa-500px fa-lg"></i>
+        </nav>
       </section>
     </div>
-    <div class="column is-half is-desktop"></div>
+    <div id="filler-column" class="column is-half"></div>
     <div id="right-column" class="column is-half">
 
-      <div id="introduction" class="container">
+      <div id="introduction" class="container shadow-box">
         <div id="text-container" class="container is-fluid animated-body">
           <h2 class="title is-size-3">
             Introduction
@@ -91,7 +71,7 @@
         </div>
       </div>
 
-      <div id="projects" class="container">
+      <div id="projects" class="container shadow-box">
         <div id="text-container" class="container is-fluid animated-body">
           <h1 class="title is-size-3">
             Projects
@@ -157,13 +137,13 @@
         </div>
       </div>
 
-      <div id="experience" class="container">
+      <div id="experience" class="container shadow-box">
         <div id="text-container" class="container is-fluid  animated-body">
           <h2 class="title is-size-3">
             Experience
           </h2>
           <p>
-            <div class="columns">
+            <div class="columns is-mobile">
               <div class="column is-three-fifths">
                 <b>AT&T</b>
                 <br/> Technology Consultant & Engineer
@@ -172,7 +152,7 @@
                 Jul 2017 - Present
               </div>
             </div>
-            <div class="columns">
+            <div class="columns is-mobile">
               <div class="column is-three-fifths">
                 <b>AT&T</b>
                 <br/> Product Development Intern
@@ -181,7 +161,7 @@
                 May 2016 - Aug 2016
               </div>
             </div>
-            <div class="columns">
+            <div class="columns is-mobile">
               <div class="column is-three-fifths">
                 <b>Cisco</b>
                 <br/> Backend Software Engineering Intern
@@ -190,7 +170,7 @@
                 May 2015 - Aug 2015
               </div>
             </div>
-            <div class="columns">
+            <div class="columns is-mobile">
               <div class="column is-three-fifths">
                 <b>Big Apple Art Gallery</b>
                 <br/> Software Engineering Intern
@@ -199,7 +179,7 @@
                 May 2014 - Dec 2014
               </div>
             </div>
-            <div style="margin-bottom: -2%;" class="columns">
+            <div style="margin-bottom: -2%;" class="columns is-mobile">
               <div class="column is-three-fifths">
                 <b>Stony Brook University</b>
                 <br/> Student Researcher
@@ -212,7 +192,7 @@
         </div>
       </div>
 
-      <figure id="duke-chapel" class="image body-images cap-right">
+      <figure id="duke-chapel" class="image cap-right shadow-box">
         <img src="images/duke-chapel.jpg">
         <figcaption>
           The Duke University Chapel
@@ -220,12 +200,12 @@
         </figcaption>
       </figure>
 
-      <div id="education" class="container">
+      <div id="education" class="container shadow-box">
         <div id="text-container" class="container is-fluid animated-body">
           <h2 class="title is-size-3">
             Education
           </h2>
-          <div class="columns">
+          <div class="columns is-mobile">
             <div class="column is-three-fifths">
               <b>Duke University</b>
               <br/> Pratt School of Engineering
@@ -236,7 +216,7 @@
               Aug 2013 - May 2017
             </div>
           </div>
-          <div class="columns">
+          <div class="columns is-mobile">
             <div class="column is-three-fifths">
               <b>Jericho Senior High School</b>
               <br/> Jericho, NY
@@ -248,7 +228,7 @@
         </div>
       </div>
 
-      <div id="interests" class="container">
+      <div id="interests" class="container shadow-box">
         <div id="text-container" class="container is-fluid animated-body">
           <h2 class="title is-size-3">
             Interests
@@ -273,11 +253,6 @@
             <a href="https://jqueryui.com" target="_blank">jquery</a>,
             <a href="http://fontawesome.io" target="_blank">font-awesome</a>,
             <a href="https://atomiks.github.io/tippyjs/" target="_blank">tippy</a>
-          </div>
-          <div id="footer-icons">
-            <i class="fa fa-github fa-lg"></i>
-            <i class="fa fa-linkedin fa-lg"></i> 
-            <i class="fa fa-500px fa-lg"></i> 
           </div>
         </div>
       </div>
