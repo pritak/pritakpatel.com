@@ -8,7 +8,18 @@ html, body {
   margin-left: 11.9px;
   text-align: center;
   letter-spacing: 10px;
-  color: rgba(255, 255, 255, 0.2)
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-icon {
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+}
+
+.nav-icon:hover{
+  transform: scale(1.2, 1.2);
+  color: rgba(255, 255, 255, 0.8)
 }
 
 #title-hero{
@@ -30,9 +41,9 @@ html, body {
   line-height: 99%;
   padding-bottom: 6%;
   letter-spacing: -4px;
-  transition: 0.5s ease;
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
+  transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
 }
 
 #subtitle-change-1{
@@ -48,6 +59,7 @@ html, body {
 #main-title:hover{
   /* transform: scale(1.1, 1.1); */
   cursor: pointer;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.9);
 }
 
 #main-subtitle{
@@ -213,15 +225,20 @@ figure:hover:before {
 
 #click-toggle {
   position: absolute;
-  width: max-content;
+  width: 30px;
   cursor: pointer;
   right: 0;
   margin-top: 25px;
   margin-right: 30px;
-  font-size: 150%;
-  color: rgba(255, 255, 255, 0.2);
+  opacity: 0.3;
+  filter: alpha(opacity=30);
   -webkit-transition: all .8s;
   transition: all .8s;
+}
+
+#click-toggle:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 
 .flip {
