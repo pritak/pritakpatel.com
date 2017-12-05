@@ -14,7 +14,7 @@ $(document).ready(function () {
         return;
     });
 
-    if ($window.width() < 768) {
+    if ($window.width() < 769) {
         $('#title-hero').removeClass('is-fullheight');
         return;
     }
@@ -28,11 +28,11 @@ $(document).ready(function () {
 (function ($) {
 
     function resize() {
-        if ($window.width() < 768) {
+        if ($window.width() < 769) {
             $('#title-hero').removeClass('is-fullheight');
             return;
         }
-        if ($window.width() > 768) {
+        if ($window.width() > 769) {
             $('#title-hero').addClass('is-fullheight');
             return;
         } 

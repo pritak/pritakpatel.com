@@ -24,12 +24,13 @@ html, body {
 }
 
 .title{
-  font-size: 180% !important;
+  font-size: 150% !important;
+  margin-bottom: 0.7em !important;
 }
 
 #title-hero{
   background: url("../images/stars.jpg");
-  background-size: 180vh auto;
+  background-size: cover;
 }
 
 #main-title{
@@ -123,6 +124,8 @@ html, body {
   position: relative;
   background: rgba(0, 81, 255, 0.185);
   max-width: 100%;
+  padding-top: 0.05px;
+  padding-bottom: 0.05px;
 }
 
 #interests{
@@ -173,8 +176,9 @@ html, body {
 
 #github-icon{
   position: absolute;
-  top: 0%;
-  right: 0%;
+  top: -5px;
+  right: -5px;
+
 }
 
 #project-box{
@@ -198,7 +202,7 @@ html, body {
 
 figcaption {
   position: absolute;
-  font-size: 1.2vw;
+  font-size: 0.8em;
   justify-content: right;
   background: black;
   background: rgba(0,0,0,0.75);
@@ -274,18 +278,20 @@ figure:hover:before {
   }
 
   #title-hero{
-    background-size: 180vh auto;
-    padding-top: 21vw;
-    height: 100vw;
+    background-size: cover;
+    height: max-content;
+    overflow: visible;
   }
 
   #main-title{
     font-size: 14.6vw;
     padding-bottom: 3%;
+    padding-top: 10vh;
   }
 
   #main-subtitle{
     font-size: 4vw;
+    padding-bottom: 10vh;
   }
 
   #subtitle-change-1{
@@ -297,15 +303,16 @@ figure:hover:before {
   }
 
   #text-container {
-    margin-left: 4%;
-    margin-right: 4%;
-    font-size: 2.8vw;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 2%;
+    font-size: 0.85em;
   }
 
   #footer-container {
-    margin-left: 4%;
-    margin-right: 4%;
-    font-size: 2vw;
+    margin-left: 6%;
+    margin-right: 6%;
+    font-size: 0.7em;
   }
 
   #filler-column {
@@ -317,7 +324,7 @@ figure:hover:before {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   #text-container {
     margin-left: 4%;
     margin-right: 4%;
