@@ -311,15 +311,15 @@ figure:hover:before {
   }
 
   #text-container {
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 3%;
+    margin-right: 3%;
     margin-top: 2%;
     font-size: 0.85em;
   }
 
   #footer-container {
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 3%;
+    margin-right: 3%;
     font-size: 0.77em;
   }
 
@@ -362,15 +362,15 @@ figure:hover:before {
   }
 
   #text-container {
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 4%;
+    margin-right: 4%;
     margin-top: 2%;
     font-size: 0.95em;
   }
 
   #footer-container {
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 4%;
+    margin-right: 4%;
     font-size: 0.87em;
   }
 }
