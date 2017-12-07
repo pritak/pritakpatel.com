@@ -161,7 +161,7 @@ html, body{
 }
 
 .interests-text{
-  font-size: 0.7em;
+  font-size: 0.65em;
   text-align: center;
   line-height: 1.4em;
 }
@@ -321,22 +321,22 @@ figure:hover:before {
   }
 
   #main-title{
-    font-size: 16vw;
+    font-size: 17.5vw;
     padding-bottom: 3%;
     padding-top: 5vh;
   }
 
   #main-subtitle{
-    font-size: 4vw;
+    font-size: 4.2vw;
     padding-bottom: 5vh;
   }
 
   #subtitle-change-1{
-    font-size: 4vw;
+    font-size: 4.2vw;
   }
 
   #subtitle-change-2{
-    font-size: 4vw;
+    font-size: 4.2vw;
   }
 
   #text-container {
