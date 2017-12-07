@@ -25,19 +25,23 @@ $(document).ready(function () {
   //   $(".title").css({ "background-position": traX + "%" + traY + "%" });
   // });
 
-  var subtitles2 = ['Design', 'Photography', 'Art', 'Travel', 'Hiking', 'Badminton', 'Music', 'Film'];
-  var subtitles1 = ['Software Engineer', 'Electrical Engineer', 'Computer Scientist', 'Tech Consultant'];
-
+  var subtitles = ['Avid Music Listener', 'Above Average Photo Taker', 'TV Show Binger', 
+  'World Traveller', 'Occasional Hiker', 'Star Wars Fanboy', 'Duke Basketball Fan',
+  'Beyhive Member', 'Novice Chef'];
+  var usedsubtitles = new Array();;
   setInterval(function() {
-    var rand1 = Math.floor(Math.random() * 8);
-    var rand2 = Math.floor(Math.random() * 4);
-    $("#subtitle-change-2").fadeOut(800, function () {
-      $("#subtitle-change-2").text(subtitles2[rand1]).fadeIn(800);
+    var rand1 = Math.floor(Math.random() * subtitles.length);
+    while(usedsubtitles.includes(subtitles[rand1])){
+      rand1 = Math.floor(Math.random() * subtitles.length);
+      if (usedsubtitles.length == subtitles.length){
+        usedsubtitles = new Array();
+      }
+    }
+    usedsubtitles.push(subtitles[rand1]);
+    $("#subtitle-change-2").slideUp(400, function () {
+      $("#subtitle-change-2").text(subtitles[rand1]).slideDown(400);
     });
-    $("#subtitle-change-1").fadeOut(800, function () {
-      $(this).text(subtitles1[rand2]).fadeIn(800);
-    });
-  }, 5000);
+  }, 6000);
 
 
 });

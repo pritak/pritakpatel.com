@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $.fn.extend({
         animateCss: function (animationName, callback) {
             var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';

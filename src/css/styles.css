@@ -39,23 +39,32 @@ html, body{
   background-size: cover;
 }
 
-#main-title{
-  font-weight: 800;
-  color: rgba(255, 255, 255, 0);
-  font-size:7.5vw;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
-  /* background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
-  background-position: 40% 50%;
-  -webkit-background-clip: text; */
-  position:relative;
-  text-align:center;
-  line-height: 99%;
-  padding-bottom: 6%;
-  letter-spacing: -4px;
+.title-container {
+  font-size:9vw;
+  font-family: 'Voltaire', sans-serif;
+ 
+  font-weight:700;
+  letter-spacing:-0.01em;
+  line-height:110%;
+  padding-bottom: 0.2em;
+  
+  text-transform:uppercase;
+  text-align:center; 
+  
+  color:rgb(253, 237, 237);
+
+  -webkit-font-smoothing: antialiased;
+  
+
   transition: 1s ease;
   -webkit-transition: 1s ease;
   -moz-transition: 1s ease;
+}
+.titled {
+  text-shadow:-1px 1px red, -2px 2px red, -3px 3px red, -4px 4px red, -5px 5px red, -6px 6px red;
+}
+.titled span.line-two {
+  text-shadow: 1px -1px rgb(99, 183, 240), 2px -2px rgb(99, 183, 240), 3px -3px rgb(99, 183, 240), 4px -4px rgb(99, 183, 240), 5px -5px rgb(99, 183, 240), 6px -6px rgb(99, 183, 240);
 }
 
 #subtitle-change-1{
@@ -69,9 +78,7 @@ html, body{
 }
 
 #main-title:hover{
-  /* transform: scale(1.1, 1.1); */
   cursor: pointer;
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0.9);
 }
 
 #main-subtitle{
@@ -79,8 +86,11 @@ html, body{
   font-size:2.1vw;
   font-weight: 600;
   text-align: center;
-  color: rgba(255, 255, 255, 0.15);
-  /* font-family; */
+  color: rgba(255, 255, 255, 0.12);
+  font-family: 'Voltaire', sans-serif;
+  transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
 }
 
 #left-column{
@@ -108,7 +118,7 @@ html, body{
 
 
 #introduction{
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.2);
   max-width: 100%;
 }
 
@@ -122,7 +132,7 @@ html, body{
 }
 
 #experience{
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.2);
   max-width: 100%;
 }
 
@@ -135,7 +145,7 @@ html, body{
 }
 
 #interests{
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.2);
   max-width: 100%;
 }
 
@@ -148,6 +158,12 @@ html, body{
 .interests-icons{
   height: 2.5em; 
   margin-right: -4px;
+}
+
+.interests-text{
+  font-size: 0.7em;
+  text-align: center;
+  line-height: 1.4em;
 }
 
 #footer{
@@ -168,7 +184,7 @@ html, body{
 
 #footer-container{
   overflow: hidden;
-  font-size: 1vw;
+  font-size: 0.9vw;
   line-height: 130%;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -305,7 +321,7 @@ figure:hover:before {
   }
 
   #main-title{
-    font-size: 14.6vw;
+    font-size: 16vw;
     padding-bottom: 3%;
     padding-top: 5vh;
   }
@@ -351,7 +367,7 @@ figure:hover:before {
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   #main-title{
-    font-size: 13.2vw;
+    font-size: 14.5vw;
     padding-bottom: 3%;
     padding-top: 5vh;
   }
@@ -384,7 +400,7 @@ figure:hover:before {
   #footer-container {
     margin-left: 4%;
     margin-right: 4%;
-    font-size: 0.87em;
+    font-size: 0.80em;
   }
 }
 
@@ -394,10 +410,21 @@ figure:hover:before {
     margin-right: 4%;
     font-size: 1.5vw;
   }
-
   #footer-container {
     margin-left: 4%;
     margin-right: 4%;
+  }
+  #main-title{
+    font-size: 9.3vw;
+  }
+  #main-subtitle{
+    font-size: 2.2vw;
+  }
+  #subtitle-change-1{
+    font-size: 2.2vw;
+  }
+  #subtitle-change-2{
+    font-size: 2.2vw;
   }
 }
 
