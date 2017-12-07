@@ -32,6 +32,8 @@ html, body{
 .title{
   font-size: 160% !important;
   margin-bottom: 0.7em !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.04em !important;
 }
 
 #title-hero{
@@ -44,7 +46,6 @@ html, body{
   font-family: 'Voltaire', sans-serif;
  
   font-weight:700;
-  letter-spacing:-0.01em;
   line-height:110%;
   padding-bottom: 0.2em;
   
@@ -69,12 +70,12 @@ html, body{
 
 #subtitle-change-1{
   font-size:2.1vw;
-  color: rgba(255, 255, 255, 0.55) !important;
+  color: rgba(255, 255, 255, 0.65) !important;
 }
 
 #subtitle-change-2{
   font-size:2.1vw;
-  color: rgba(255, 255, 255, 0.55) !important;
+  color: rgba(255, 255, 255, 0.65) !important;
 }
 
 #main-title:hover{
@@ -85,9 +86,9 @@ html, body{
   display: block;
   font-size:2.1vw;
   font-weight: 600;
+  letter-spacing: -0.04em;
   text-align: center;
-  color: rgba(255, 255, 255, 0.12);
-  font-family: 'Voltaire', sans-serif;
+  color: rgba(255, 255, 255, 0.25);
   transition: 1s ease;
   -webkit-transition: 1s ease;
   -moz-transition: 1s ease;
@@ -180,6 +181,9 @@ html, body{
   padding-left: 7%;
   max-width: 100%;
   font-size: 1.2vw;
+  font-weight: 349;
+  letter-spacing: -0.02em;
+  color: rgb(36, 36, 36);
 }
 
 #footer-container{
@@ -235,7 +239,7 @@ html, body{
 
 figcaption {
   position: absolute;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   justify-content: right;
   background: black;
   background: rgba(0,0,0,0.75);
