@@ -1,5 +1,15 @@
 $(document).ready(function () {
 
+    $("#underline-1").hover(function () {
+        $('#underline-1-text').toggle();
+    });
+    $("#underline-2").hover(function () {
+        $('#underline-2-text').toggle();
+    });
+    $("#underline-3").hover(function () {
+        $('#underline-3-text').toggle();
+    });
+
     $.fn.extend({
         animateCss: function (animationName, callback) {
             var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';

@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   // tippy(document.querySelector('#main-title'),{
   //   size: 'regular',
   //   placement: 'top',

@@ -21,7 +21,6 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="/node_modules/bulma/css/bulma.css">
   <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.css">
-  <script src="/node_modules/tippy.js/dist/tippy.all.min.js"></script>
   <script src="/node_modules/jquery/dist/jquery.js"></script>
   <script src="js/title-design.js"></script>
   <script src="js/animations.js"></script>
@@ -36,7 +35,8 @@
         <img src="images/arrow.png" id="click-toggle"></img>
         <div class="hero-body">
           <div class="container">
-            <div id="main-title" class="titled title-container">Hi, I'm<br/>
+            <div id="main-title" class="titled title-container"> &nbspHi, I'm
+              <br/>
               <span class="line-two">Pritak</span>
             </div>
             <div id="main-subtitle" class="subtitle">
@@ -67,15 +67,51 @@
 
       <div id="introduction" class="container shadow-box">
         <div id="text-container" class="container is-fluid animated-body">
-
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-            ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+          <div class="title">
+            Introduction
+          </div>
+          <p id="intro-text"> I’m Pritak, a 23 year old
+            <span id="underline-1" class="underline">
+              <strong>computer engineer</strong>
+            </span>
+            who just moved to the Bay Area from the east coast. I currently work on some really cool projects at AT&T as a
+            <span id="underline-2" class="underline">
+              <strong>tech consultant</strong>
+            </span> - if you’d like to learn more about what I do just shoot me an email.
+            <br/>
+            <br/> On weekends, at the moment you can probably catch me exploring my new home, relaxing with friends or at a bar
+            screaming at the TV while watching a
+            <span id="underline-3" class="underline">
+              <strong>Duke basketball game</strong>
+            </span>.
+            <br/>
+            <br/> Recently I’ve also been diving into the world of web development, and here you are witnessing my first ever
+            creation - let me know what you think!
+          </p>
+          <span id="underline-1-text" class="underline-text">
+            <hr>
+            <p>
+              <span class="underline">
+                <strong>Computer engineer</strong>
+              </span> is a very vague term - I like all kinds of engineering things like tinkering with electronics, writing code,
+              and designing stuff. I have a degree in both electrical and computer engineering.</p>
+          </span>
+          <span id="underline-2-text" class="underline-text">
+            <hr>
+            <p>
+              Yes, you read that right - AT&T has a small but quickly growing
+              <span class="underline">
+                <strong>tech consulting</strong>
+              </span> group that was recently acquired.</p>
+          </span>
+          <span id="underline-3-text" class="underline-text">
+            <hr>
+            <p>
+              <span class="underline">
+                <strong>Computer engineer</strong>
+              </span> is a very vague term - I like all kinds of engineering things like tinkering with electronics, writing code,
+              and designing stuff. I have a degree in both electrical and computer engineering.</p>
+          </span>
         </div>
       </div>
 
@@ -290,7 +326,7 @@
               <img class="interests-icons" src="images/icons8-tennis-racquet-100.png"></img>
               <br/>
               <span>Badminton</span>
-              <p class="interests-text">Been playing competetively since middle school. Message me if you live in the Bay Area and want to play!</p>
+              <p class="interests-text">Have been playing competetively since middle school. Message me if you live in the Bay Area and want to play!</p>
             </div>
             <div class="column icon-wrapper">
               <img class="interests-icons" src="images/icons8-walking-100.png"></img>
@@ -318,24 +354,25 @@
               <span>Music</span>
               <p class="interests-text">Misleading because I don't actually play an instrument, but I really enjoy listening to all kinds of music</p>
             </div>
-            <div class="column icon-wrapper">
+            <div style="padding-bottom: 4%;" class="column icon-wrapper">
               <img class="interests-icons" src="images/icons8-movie-projector-100.png"></img>
               <br/>
               <span>Film</span>
               <p class="interests-text">I enjoy all kinds of old and new movies and TV shows and would probably be really good at trivia. Yes, I have
-              MoviePass.</p>
+                MoviePass.
+              </p>
             </div>
           </div>
         </div>
 
         <div id="footer" class="container">
           <div id="footer-container" class="container is-fluid is-primary">
-            <div style="float:left;">Built with:
+            <div style="float:left;">Built from scratch using:
               <br/>
               <a href="https://bulma.io" target="_blank">bulma</a>,
               <a href="https://jqueryui.com" target="_blank">jquery</a>,
-              <a href="https://icons8.com" target="_blank">icons8</a>,
-              <a href="https://atomiks.github.io/tippyjs/" target="_blank">tippy</a>
+              <a href="https://fonts.google.com" target="_blank">google fonts</a>,
+              <a href="https://icons8.com" target="_blank">icons8</a>
             </div>
 
             <div style="float:right;">&copy; 2017</div>
