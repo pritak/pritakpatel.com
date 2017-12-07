@@ -13,6 +13,7 @@
   <!--[/htmlclean-protect]-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
   <title>Pritak Patel</title>
   <!--<Deject>-->
@@ -36,7 +37,7 @@
         <div class="hero-body">
           <div class="container">
             <h1 id="main-title" class="animated bounceIn" title="Click Me!">
-              Hi, I'm Pritak 
+              Hi, I'm Pritak
             </h1>
             <div id="main-subtitle" class="subtitle">
               <span id="subtitle-change-1">Computer Engineer</span>
@@ -48,17 +49,16 @@
         </div>
         <nav id="navigation" class="is-fullwidth is-size-6">
           <a href="https://github.com/pritak" target="_blank">
-            <i class="nav-icon fa fa-github fa-lg"></i>
-          </a>&nbsp&nbsp&nbsp&nbsp
+            <img class="nav-icon" src="images/icons8-github-500.png"></img>
+          </a>&nbsp&nbsp
           <a href="https://www.linkedin.com/in/pritak-patel-6032141b/" target="_blank">
-            <i class="nav-icon fa fa-linkedin fa-lg"></i>
-          </a>&nbsp&nbsp&nbsp&nbsp
+            <img class="nav-icon" src="images/icons8-linkedin-500.png"></img>
+          </a>&nbsp&nbsp
           <a href="https://500px.com/pritak" target="_blank">
-            <i class="nav-icon fa fa-500px fa-lg"></i>
-          </a>&nbsp&nbsp&nbsp&nbsp
+            <img class="nav-icon" src="images/icons8-unsplash-500.png"></img>
+          </a>&nbsp&nbsp
           <a href="mailto:pritak.patel@gmail.com" target="_blank">
-            <i class="nav-icon fa fa-envelope-o fa-lg" aria-hidden="true"></i>
-            </i>
+            <img class="nav-icon" src="images/icons8-email-100.png"></img>
           </a>
         </nav>
       </section>
@@ -97,7 +97,7 @@
                   </h2>
                   <p style="font-size: 85%; margin-bottom: 1em;">Senior design project of a wireless XPRIZE ocean sensor - involving research, hardware and software engineering</p>
                   <span id="github-icon" class="icon is-large">
-                    <i class="fa fa-github fa-md"></i>
+                      <i class="fa fa-github"></i>
                   </span>
                   <div class="tags">
                     <span class="tag is-primary">Arduino</span>
@@ -115,7 +115,7 @@
                     toolkit developed at Duke University
                   </p>
                   <span id="github-icon" class="icon is-large">
-                    <i class="fa fa-github fa-md"></i>
+                      <i class="fa fa-github"></i>
                   </span>
                   <div class="tags">
                     <span class="tag is-light">Verilog</span>
@@ -133,7 +133,7 @@
                   <p style="font-size: 85%; margin-bottom: 1em;">Final project for an advanced course in computer architecture, involving a full processor design and assembly
                     code to run a game of Tic-Tac-Toe</p>
                   <span id="github-icon" class="icon is-large">
-                    <i class="fa fa-github fa-md"></i>
+                      <i class="fa fa-github"></i>
                   </span>
                   <div class="tags">
                     <span class="tag is-warning">Python</span>
@@ -149,7 +149,7 @@
                   <p style="font-size: 85%; margin-bottom: 1em;">My personal website, which includes links to recent projects, work history, and interests. You're looking
                     at it right now!</p>
                   <span id="github-icon" class="icon is-large">
-                    <i class="fa fa-github fa-md"></i>
+                      <i class="fa fa-github"></i>
                   </span>
                   <div class="tags">
                     <span class="tag is-link">HTML</span>
@@ -265,40 +265,83 @@
 
       <div id="interests" class="container shadow-box">
         <div id="text-container" class="container is-fluid animated-body">
-          <div class="title">
+          <div style="padding-bottom: 3%;" class="title">
             Interests
           </div>
 
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-            ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
-        </div>
-      </div>
-
-      <div id="footer" class="container">
-        <div id="footer-container" class="container is-fluid is-primary">
-          <div style="float:left;">Built with:
-            <br/>
-            <a href="https://bulma.io" target="_blank">bulma</a>,
-            <a href="https://jqueryui.com" target="_blank">jquery</a>,
-            <a href="http://fontawesome.io" target="_blank">font-awesome</a>,
-            <a href="https://atomiks.github.io/tippyjs/" target="_blank">tippy</a>
+          <div class="columns is-mobile">
+            <div class="column icon-wrapper">
+              <img class="interests-icons" src="images/icons8-design-100.png"></img>
+              <br/>
+              <span>Design</span>
+            </div>
+            <div class="column icon-wrapper">
+              <img class="interests-icons" src="images/icons8-compact-camera-100.png"></img>
+              <br/>
+              <span>Photography</span>
+            </div>
+            <div class="column icon-wrapper">
+              <img class="interests-icons" src="images/icons8-location-100.png"></img>
+              <br/>
+              <span>IoT</span>
+            </div>
           </div>
+          <div style="margin-top: 0px;" class="columns is-mobile">
+            <div class="column icon-wrapper">
+              <img class="interests-icons" src="images/icons8-tennis-racquet-100.png"></img>
+              <br/>
+              <span>Badminton</span>
+            </div>
+            <div class="column icon-wrapper">
+              <img class="interests-icons" src="images/icons8-walking-100.png"></img>
+              <br/>
+              <span>Hiking</span>
+            </div>
+            <div class="column icon-wrapper">
+              <img class="interests-icons" src="images/icons8-world-map-100.png"></img>
+              <br/>
+              <span>Travel</span>
+            </div>
+          </div>
+          <div style="margin-top: 0px;" class="columns is-mobile">
+            <div class="column icon-wrapper">
+              <img class="interests-icons" src="images/icons8-puzzle-512.png"></img>
+              <br/>
+              <span>Games</span>
+            </div>
+            <div class="column icon-wrapper">
+              <img class="interests-icons" src="images/icons8-music-record-100.png"></img>
+              <br/>
+              <span>Music</span>
+            </div>
+            <div class="column icon-wrapper">
+              <img class="interests-icons" src="images/icons8-movie-projector-100.png"></img>
+              <br/>
+              <span>Film</span>
+            </div>
+          </div>
+        </div>
 
-          <div style="float:right;">&copy; 2017</div>
-          <br/>
-          <div style="float:right;">Made with&nbsp
-            <i id="heart-footer" class="fa fa-heart"></i>
+        <div id="footer" class="container">
+          <div id="footer-container" class="container is-fluid is-primary">
+            <div style="float:left;">Built with:
+              <br/>
+              <a href="https://bulma.io" target="_blank">bulma</a>,
+              <a href="https://jqueryui.com" target="_blank">jquery</a>,
+              <a href="http://fontawesome.io" target="_blank">font-awesome</a>,
+              <a href="https://icons8.com" target="_blank">icons8</a>,
+              <a href="https://atomiks.github.io/tippyjs/" target="_blank">tippy</a>
+            </div>
+
+            <div style="float:right;">&copy; 2017</div>
+            <br/>
+            <div style="float:right;">Made with&nbsp
+              <i id="heart-footer" class="fa fa-heart"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 </body>
 
 </html>
