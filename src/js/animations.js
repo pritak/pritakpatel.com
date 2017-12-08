@@ -23,10 +23,6 @@ $(document).ready(function () {
         }
     });
 
-    setInterval(function () {
-        $('#heart-footer').animateCss("pulse");
-    }, 2000);
-
     var animationOptions = ["bounce", "flash", "pulse", "rubberBand",
         "shake", "headShake", "swing", "tada",
         "wobble", "jello", "bounceIn", "bounceInDown",

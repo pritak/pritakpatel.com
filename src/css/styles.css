@@ -11,12 +11,12 @@ html, body{
 }
 
 #navigation{
-  margin-bottom:5%;
   text-align: center;
   color: rgba(255, 255, 255, 0.2);
 }
 
 .nav-icon {
+  margin-bottom:5%;
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
@@ -128,19 +128,18 @@ html, body{
 .underline {
   color: transparent;
   display: inline-block;
-  overflow: hidden;
   position: relative;
   text-decoration: none;
 }
 .underline:after {
-  background: -webkit-linear-gradient(left, rgba(122, 95, 255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%) center 1.27em/100% 0.15em no-repeat;
-  background: linear-gradient(90deg, rgba(122, 95, 255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%) center 1.27em/100% 0.15em no-repeat;
+  background: -webkit-linear-gradient(left, rgba(106, 89, 255, 0.55) 15%, rgba(1, 255, 137, 0.8) 70%, rgba(50, 154, 252, 0.8) 100%) center 1.27em/100% 0.15em no-repeat;
+  background: linear-gradient(90deg, rgba(106, 89, 255, 0.55) 15%, rgba(1, 255, 137, 0.8) 70%, rgba(50, 154, 252, 0.8) 100%) center 1.27em/100% 0.15em no-repeat;
   content: "";
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
-  width: 400%;
+  width: 100%;
   will-change: transform;
   z-index: -1;
 }
@@ -151,7 +150,7 @@ html, body{
 
 .underline-text{
   display: none;
-  font-size: 0.83em;
+  font-size: 0.85em;
 }
 
 .underline:hover{
@@ -178,7 +177,7 @@ html, body{
   background: rgba(0, 81, 255, 0.185);
   max-width: 100%;
   padding-top: 0.05px;
-  padding-bottom: 2.6px;
+  padding-bottom: 2.8px;
 }
 
 #interests{
@@ -234,10 +233,6 @@ html, body{
   max-width: 100%;
 }
 
-#heart-footer{
-  color: rgba(255, 0, 0, 0.75);
-}
-
 #project-grid{
   margin: 0%;
   padding-top: 1%;
@@ -273,18 +268,26 @@ html, body{
   visibility: visible;
 }
 
+.figure-link{
+  color: rgba(255, 255, 255, 0.80);
+}
+
+.figure-link:hover{
+  color: rgb(255, 255, 255);
+}
+
+
 figcaption {
   position: absolute;
   font-size: 1.2vw;
   justify-content: right;
   background: black;
   background: rgba(0,0,0,0.75);
-  color: white;
   padding: 10px 20px;
   opacity: 0;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition:    all 0.6s ease;
-  -o-transition:      all 0.6s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition:    all 1s ease;
+  -o-transition:      all 1s ease;
 }
 
 figure:hover figcaption {
@@ -294,9 +297,9 @@ figure:hover figcaption {
 figure:before {
   content: "?";
   position: absolute;
-  font-weight: 800;
-  background: black;
-  background: rgba(255,255,255,0.75);
+  font-weight: 600;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.75);
   text-shadow: 0 0 5px white;
   color: black;
   width: 24px;
@@ -308,7 +311,7 @@ figure:before {
   font-size: 14px;
   line-height: 24px;
   -moz-transition: all 0.6s ease;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 figure:hover:before {
@@ -361,22 +364,22 @@ figure:hover:before {
   }
 
   #main-title{
-    font-size: 17.5vw;
+    font-size: 18vw;
     padding-bottom: 3%;
     padding-top: 5vh;
   }
 
   #main-subtitle{
-    font-size: 4.2vw;
+    font-size: 4.4vw;
     padding-bottom: 5vh;
   }
 
   #subtitle-change-1{
-    font-size: 4.2vw;
+    font-size: 4.4vw;
   }
 
   #subtitle-change-2{
-    font-size: 4.2vw;
+    font-size: 4.4vw;
   }
 
   #text-container {
@@ -407,26 +410,21 @@ figure:hover:before {
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   #main-title{
-    font-size: 14.5vw;
+    font-size: 16vw;
     padding-bottom: 3%;
     padding-top: 5vh;
   }
 
-  #main-subtitle{
-    font-size: 3.5vw;
-    padding-bottom: 5vh;
-  }
-
   #subtitle-change-1{
-    font-size: 3.5vw;
+    font-size: 3.8vw;
   }
 
   #subtitle-change-2{
-    font-size: 3.5vw;
+    font-size: 3.8vw;
   }
 
   #main-subtitle{
-    font-size: 3.5vw;
+    font-size: 3.8vw;
     padding-bottom: 5vh;
   }
 
@@ -455,16 +453,16 @@ figure:hover:before {
     margin-right: 4%;
   }
   #main-title{
-    font-size: 9.3vw;
+    font-size: 10vw;
   }
   #main-subtitle{
-    font-size: 2.2vw;
+    font-size: 2.4vw;
   }
   #subtitle-change-1{
-    font-size: 2.2vw;
+    font-size: 2.4vw;
   }
   #subtitle-change-2{
-    font-size: 2.2vw;
+    font-size: 2.4vw;
   }
 }
 

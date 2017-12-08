@@ -37,8 +37,8 @@ $(document).ready(function () {
       }
     }
     usedsubtitles.push(subtitles[rand1]);
-    $("#subtitle-change-2").slideUp(400, function () {
-      $("#subtitle-change-2").text(subtitles[rand1]).slideDown(400);
+    $("#subtitle-change-2").fadeOut(400, function () {
+      $("#subtitle-change-2").text(subtitles[rand1]).fadeIn(400);
     });
   }, 6000);
 

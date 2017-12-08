@@ -35,6 +35,7 @@ build/Release
 # Gulp files
 gulpfile.js
 dist/
+faviconData.json
 
 # Dependency directories
 node_modules/
