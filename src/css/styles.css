@@ -43,6 +43,10 @@ html, body{
   background-size: cover;
 }
 
+.image{
+  z-index: 100000;
+}
+
 .title-container {
   font-size:9vw;
   font-family: 'Voltaire', sans-serif;
@@ -157,6 +161,10 @@ html, body{
   cursor: pointer;
 }
 
+#email-link{
+  color: white;
+}
+
 #projects{
   background: rgb(255, 246, 188);
   max-width: 100%;
@@ -170,13 +178,14 @@ html, body{
   background: rgba(255, 255, 255, 0.2);
   max-width: 100%;
   padding-bottom: 2.6px;
+  padding-top: 1.3em;
 }
 
 #education{
   position: relative;
   background: rgba(0, 81, 255, 0.185);
   max-width: 100%;
-  padding-top: 0.05px;
+  padding-top: 1.3em;
   padding-bottom: 2.8px;
 }
 
@@ -233,6 +242,12 @@ html, body{
   max-width: 100%;
 }
 
+.left-footer{
+  float:left;
+  display: block;
+}
+
+
 #project-grid{
   margin: 0%;
   padding-top: 1%;
@@ -268,54 +283,16 @@ html, body{
   visibility: visible;
 }
 
-.figure-link{
-  color: rgba(255, 255, 255, 0.80);
-}
-
-.figure-link:hover{
-  color: rgb(255, 255, 255);
-}
-
-
 figcaption {
-  position: absolute;
-  font-size: 1.2vw;
-  justify-content: right;
-  background: black;
-  background: rgba(0,0,0,0.75);
-  padding: 10px 20px;
-  opacity: 0;
-  -webkit-transition: all 1s ease;
-  -moz-transition:    all 1s ease;
-  -o-transition:      all 1s ease;
-}
+  position: relative;
+  font-size: 1vw;
+  color: rgba(0, 0, 0, 0.5);
+  background: transparent;
+  text-align: right;
+  padding-right: 17px;
+  padding-top: 5px;
+  margin-bottom: -3em;
 
-figure:hover figcaption {
-  opacity: 1;
-}
-
-figure:before {
-  content: "?";
-  position: absolute;
-  font-weight: 600;
-  background: rgb(255, 255, 255);
-  background: rgba(255, 255, 255, 0.75);
-  text-shadow: 0 0 5px white;
-  color: black;
-  width: 24px;
-  height: 24px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius:    12px;
-  border-radius:         12px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 24px;
-  -moz-transition: all 0.6s ease;
-  opacity: 0.5;
-}
-
-figure:hover:before {
-  opacity: 0;
 }
 
 #click-toggle {
@@ -339,10 +316,6 @@ figure:hover:before {
 .flip {
   transform: rotate(-180deg);
 }
-
-.cap-right:before { bottom: 10px; right: 10px; }
-.cap-right figcaption { bottom: 0; right: -30%; }
-.cap-right:hover figcaption { right: 0; }
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -394,6 +367,10 @@ figure:hover:before {
     margin-right: 3%;
     font-size: 0.77em;
   }
+  .left-footer{
+    width: 50vw; 
+  }
+
 
   #filler-column {
     display: none;
@@ -405,6 +382,12 @@ figure:hover:before {
 
   figcaption {
     font-size: 2.2vw;
+  }
+  #experience{
+    padding-top: 0.4em;
+  }
+  #education{
+    padding-top: 0.4em;
   }
 }
 
@@ -440,6 +423,12 @@ figure:hover:before {
     margin-right: 4%;
     font-size: 0.80em;
   }
+  #experience{
+    padding-top: 0.6em;
+  }
+  #education{
+    padding-top: 0.6em;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -463,6 +452,12 @@ figure:hover:before {
   }
   #subtitle-change-2{
     font-size: 2.4vw;
+  }
+  #experience{
+    padding-top: 0.6em;
+  }
+  #education{
+    padding-top: 0.6em;
   }
 }
 
