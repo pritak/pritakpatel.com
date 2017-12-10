@@ -36,6 +36,8 @@ $(document).ready(function () {
         "zoomInLeft", "zoomInRight", "zoomInUp",
         "slideInDown", "slideInLeft", "slideInRight", "slideInUp"];
 
+    $('#main-title').animateCss('bounceIn');
+
     document.getElementById("main-title").onclick = function () {
         var rand = animationOptions[Math.floor(Math.random() * animationOptions.length)];
         $('#main-title').animateCss(rand);
