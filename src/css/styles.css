@@ -225,7 +225,7 @@ html, body{
 
 .links{
   font-size: 92%;
-  font-family: monaco;
+  font-family: 'Oxygen Mono', monospace;
   letter-spacing: -0.02em;
 }
 
@@ -427,6 +427,7 @@ figcaption {
     margin-right: 4%;
     margin-top: 2%;
     font-size: 0.95em;
+    font-family: 'Source Sans Pro', sans-serif;
   }
 
   #footer-container {
