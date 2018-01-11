@@ -1,6 +1,5 @@
 * {
   -webkit-overflow-scrolling: touch;
-  
 }
 
 html, body{
@@ -125,7 +124,7 @@ html, body{
 
 
 #introduction{
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.404);
   max-width: 100%;
 }
 
@@ -175,22 +174,27 @@ html, body{
 }
 
 #experience{
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.404);
   max-width: 100%;
   padding-bottom: 2.6px;
   padding-top: 1.3em;
 }
 
+#skills{
+  background: rgba(255, 71, 148, 0.103);
+  max-width: 100%;
+}
+
 #education{
   position: relative;
-  background: rgba(0, 81, 255, 0.185);
+  background: rgba(0, 153, 255, 0.178);
   max-width: 100%;
   padding-top: 1.3em;
   padding-bottom: 2.8px;
 }
 
 #interests{
-  background: rgba(255, 255, 255, 0.2);
+  background:rgba(255, 255, 255, 0.404);
   max-width: 100%;
 }
 
@@ -209,13 +213,20 @@ html, body{
   font-size: 0.81em;
   text-align: left;
   line-height: 1.4em;
+  color: rgb(100, 100, 100); 
 }
 
 #footer{
-  background: rgba(190, 90, 248, 0.226);
+  background: rgba(190, 77, 255, 0.185);
   max-width: 100%;
   font-size: 100%;
   z-index: 1001;
+}
+
+.links{
+  font-size: 92%;
+  font-family: monaco;
+  letter-spacing: -0.02em;
 }
 
 #text-container{
@@ -224,7 +235,7 @@ html, body{
   padding-right: 7%;
   padding-left: 7%;
   max-width: 100%;
-  font-size: 1.2vw;
+  font-size: 1em;
   font-weight: 350;
   letter-spacing: -0.02em;
   color: rgb(36, 36, 36);
@@ -371,7 +382,6 @@ figcaption {
     width: 50vw; 
   }
 
-
   #filler-column {
     display: none;
   }
@@ -385,6 +395,7 @@ figcaption {
   }
   #experience{
     padding-top: 0.4em;
+    margin-bottom: -0.6em;
   }
   #education{
     padding-top: 0.4em;
@@ -425,6 +436,7 @@ figcaption {
   }
   #experience{
     padding-top: 0.6em;
+    margin-bottom: -0.6em;
   }
   #education{
     padding-top: 0.6em;
@@ -455,6 +467,7 @@ figcaption {
   }
   #experience{
     padding-top: 0.6em;
+    margin-bottom: -0.6em;
   }
   #education{
     padding-top: 0.6em;

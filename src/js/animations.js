@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+    var isIE = /*@cc_on!@*/false || !!document.documentMode;
+    var isEdge = !isIE && !!window.StyleMedia;
+    if (isIE || isEdge){
+        $('#modal').addClass('is-active');
+    }
+
     $("#underline-1").hover(function () {
         $('#underline-1-text').toggle();
     });
@@ -36,7 +42,7 @@ $(document).ready(function () {
         "zoomInLeft", "zoomInRight", "zoomInUp",
         "slideInDown", "slideInLeft", "slideInRight", "slideInUp"];
 
-    $('#main-title').animateCss('bounceIn');
+    $('#main-title').animateCss('jackInTheBox');
 
     document.getElementById("main-title").onclick = function () {
         var rand = animationOptions[Math.floor(Math.random() * animationOptions.length)];
